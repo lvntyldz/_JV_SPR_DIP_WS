@@ -1,0 +1,19 @@
+### Eclipse
+bin/
+tmp/
+.settings/
+.project
+.classpath
+
+
+### Maven
+target/
+
+### Java
+*.class
+
+# IntelliJ
+/out/
+.idea
+*.iml
+
