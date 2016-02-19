@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.okan.imageproccesing</groupId>
@@ -8,11 +8,54 @@
     <name>_JV_SPR_DIP_WS</name>
     <url>http://maven.apache.org</url>
 
+    <repositories>
+        <repository>
+            <id>repo.local.resources</id>
+            <url>file:/Users/leventyildiz/Desktop/DEVELOPMENT/REPOSITORY</url>
+        </repository>
+    </repositories>
+
+
     <properties>
         <spring.version>4.1.1.RELEASE</spring.version>
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>com.okan.vpt</groupId>
+            <artifactId>vpt-algorithm</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.okan.vpt</groupId>
+            <artifactId>vpt-jai-core</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.okan.vpt</groupId>
+            <artifactId>vpt-jai-codec</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.okan.vpt</groupId>
+            <artifactId>vpt-jama</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
