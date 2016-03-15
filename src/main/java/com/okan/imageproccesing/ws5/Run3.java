@@ -9,20 +9,17 @@ public class Run3 {
 	
 	public static void main(String[] args) {
 		
-		
-		
 		Image immage = Load.invoke("./src/main/resources/images/samples/valve.png");
 		Display2D.invoke(immage, "valve");
 		
 		//Yeni renkli görüntü oluştur
-		ByteImage renkli = new ByteImage(immage.getXDim(), immage.getYDim());
+		ByteImage renkli = new ByteImage(immage.getXDim(), immage.getYDim(),3);
 		
 		for(int x=0; x<immage.getXDim(); x++){
 			for(int y=0; y<immage.getYDim();  y++){
 				
 				int z = immage.getXYByte(x, y);
-				
-				
+
 				int r = 0;
 				if(z<=128){
 					r=(int)(255.0/128)*z;
