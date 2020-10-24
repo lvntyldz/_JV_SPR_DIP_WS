@@ -1,1 +1,1 @@
-# _JV_SPR_DIP_WS
+# java-spring-dip-workshop
